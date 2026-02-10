@@ -1,0 +1,66 @@
+# 12 MHz clock
+set_io -nowarn clk        35
+
+# RS232
+set_io -nowarn RX          6
+set_io -nowarn TX          9
+
+# LEDs and Button
+set_io -nowarn rst_n      10 # button
+set_io -nowarn LEDR_N     11
+set_io -nowarn LEDG_N     37
+
+# RGB LED Driver
+set_io -nowarn LED_RED_N  39
+set_io -nowarn LED_GRN_N  40
+set_io -nowarn LED_BLU_N  41
+
+# LEDs and Buttons (PMOD 2)
+set_io -nowarn LED1       26
+set_io -nowarn LED2       27
+set_io -nowarn LED3       25
+set_io -nowarn LED4       23
+set_io -nowarn LED5       21
+set_io -nowarn BTN1       20
+set_io -nowarn BTN2       19
+set_io -nowarn BTN3       18
+
+# PMOD 1A
+set_io -nowarn pmod_1a[0]  4
+set_io -nowarn pmod_1a[1]  2
+set_io -nowarn pmod_1a[2] 47
+set_io -nowarn pmod_1a[3] 45
+set_io -nowarn pmod_1a[4]  3
+set_io -nowarn pmod_1a[5] 48
+set_io -nowarn pmod_1a[6] 46
+set_io -nowarn pmod_1a[7] 44
+
+# PMOD 1B
+set_io -nowarn pmod_1b[0] 43
+set_io -nowarn pmod_1b[1] 38
+set_io -nowarn pmod_1b[2] 34
+set_io -nowarn pmod_1b[3] 31
+set_io -nowarn pmod_1b[4] 42
+set_io -nowarn pmod_1b[5] 36
+set_io -nowarn pmod_1b[6] 32
+set_io -nowarn pmod_1b[7] 28
+
+# ui_in on 1B
+set_io -nowarn ui_in[0] 43
+set_io -nowarn ui_in[1] 38
+set_io -nowarn ui_in[2] 34
+set_io -nowarn ui_in[3] 31
+set_io -nowarn ui_in[4] 42
+set_io -nowarn ui_in[5] 36
+set_io -nowarn ui_in[6] 32
+set_io -nowarn ui_in[7] 28
+
+## TinyTapeout 6-bit VGA Pmod on Pmod 1A
+set_io -nowarn uo_out[0]   4  #r1
+set_io -nowarn uo_out[1]   2  #g1
+set_io -nowarn uo_out[2]   47 #b1
+set_io -nowarn uo_out[3]   45 #vsync
+set_io -nowarn uo_out[4]   3  #r0
+set_io -nowarn uo_out[5]   48 #g0
+set_io -nowarn uo_out[6]   46 #b0
+set_io -nowarn uo_out[7]   44 #hsync
